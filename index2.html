@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of Bangladesh</title>
+    <title>Bank of Bangladesh</title>
+    <!-- tailwind css -->
+    <script 
+    src="https://cdn.tailwindcss.com">
+    </script>
+    <!-- tailwind Componet -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- -------- -->
+<!-- css -->
+<link rel="stylesheet" href="css/style2.css">
+</head>
+<body class="background-color">
+    <header>
+        <h1 class="font-semibold text-4xl text-center pt-20">Your <span class="text-purple-500">Bank</span></h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div  class="bg-green-400 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white">Deposit</h4>
+                    <h4  class="text-5xl text-white">$<span id="deposite">00</span></h4>
+                </div>
+                <div  class="bg-yellow-400 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white">Withdraw</h4>
+                    <h4 class="text-5xl text-white">$<span id="withdraw">00</span></h4>
+                </div>
+                <div class="bg-violet-400 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white">Balance</h4>
+                    <h4 class="text-5xl text-white">$<span id="balance">00</span></h4>
+                </div>
+            </div>
+        </section>
+        <div class="toast toast-top toast-right" style="display: none;" id="toast">
+            <div class="alert alert-success">
+              <div>
+                <span>Deposite send succesfully</span>
+              </div>
+            </div>
+          </div>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-400 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white">Deposit</h4>
+                        <input type="number" id="deposite-field" class="my-1 mt-2 py-2 rounded-lg w-9/12 px-5 block" placeholder="$ amount you want to Deposite" required>
+                        <button id="btn-deposite" class="bg-emerald-600 px-8 py-2 text-white font-medium mt-4 rounded-lg hover:bg-violet-800">Deposite</button>
+                </div>
+                <div class="bg-indigo-300 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white">Withdraw</h4>
+                    <input type="number" id="withdraw-field" class="my-1 mt-2 py-2 rounded-lg w-9/12 px-5 block" placeholder="$ amount you want to Withdraw" required>
+                   <button id="btn-withdraw" class="bg-emerald-600 px-8 py-2 text-white font-medium mt-4 rounded-lg hover:bg-violet-800">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- js -->
+    <script src="js/index2.js"></script>
+</body>
+</html>

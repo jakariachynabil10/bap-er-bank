@@ -1,0 +1,18 @@
+.background-color{
+    background: linear-gradient(rgb(196, 36, 80), rgb(30, 20, 45));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.border-css{
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.email-css {
+    background-color: rgb(196, 36, 80);
+}
+.password-css{
+    background-color: rgb(196, 36, 80);
+
+}
